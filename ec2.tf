@@ -3,6 +3,6 @@ resource "aws_instance" "instance" {
   ami           = var.ami
   instance_type = each.value["instance_type"]
   tags = {
-    Name = each.key
+    Name = each.value["component_name"]
   }
 }
