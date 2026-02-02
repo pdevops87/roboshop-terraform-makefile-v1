@@ -1,5 +1,6 @@
 resource "aws_security_group" "sg" {
   name = "${var.env}-sg"
+  for_each = var.appl_ports
   dynamic "ingress" {
     for_each = var.appl_ports
     content {
@@ -9,9 +10,10 @@ resource "aws_security_group" "sg" {
       protocol  = "tcp"
       description = ingress.key
     }
+
   }
   tags = {
-    Name = "${var.env}-sg"
+    Name = "${var.env}-${each.key}"
   }
 }
 
