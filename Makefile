@@ -7,7 +7,6 @@ help: ## Display this help message
 git: ## Pull latest code from git repo
 	git pull
 
-
 dev-apply: ## Terraform init & apply for dev environment
 	terraform init -backend-config=env-dev/state.tfvars
 	terraform apply -var-file=env-dev/main.tfvars -auto-approve
