@@ -5,9 +5,8 @@ git:
 	git pull
 
 dev-apply:
-	@echo "initialize terraform......"
+
 	terraform init -backend-config=env-dev/state.tfvars
-	@echo "create a resources in cloud vendor aws........"
 	terraform apply -var-file=env-dev/main.tfvars -auto-approve
 
 
