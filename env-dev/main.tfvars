@@ -5,3 +5,10 @@ components = {
       instance_type = "t2.micro"
     }
 }
+
+appl_ports = {
+  ports = {
+    ssh = 22
+    app = 80
+  }
+}
