@@ -29,34 +29,34 @@ appl_ports = {
     from_port = 27017
     to_port   = 27017
   }
-#   redis = {
-#     from_port = 6379
-#     to_port   = 6379
-#   }
-#   mysql = {
-#     from_port = 3306
-#     to_port   = 3306
-#   }
-#   rabbitmq = {
-#     from_port = 5672
-#     to_port   = 5672
-#   }
-#   cart = {
-#     from_port = 8080
-#     to_port   = 8080
-#   }
-#   user = {
-#     from_port = 8080
-#     to_port   = 8080
-#   }
-#   shipping = {
-#     from_port = 8080
-#     to_port   = 8080
-#   }
-#   payment = {
-#     from_port = 8080
-#     to_port   = 8080
-#   }
+  redis = {
+    from_port = 6379
+    to_port   = 6379
+  }
+  mysql = {
+    from_port = 3306
+    to_port   = 3306
+  }
+  rabbitmq = {
+    from_port = 5672
+    to_port   = 5672
+  }
+  cart = {
+    from_port = 8080
+    to_port   = 8080
+  }
+  user = {
+    from_port = 8080
+    to_port   = 8080
+  }
+  shipping = {
+    from_port = 8080
+    to_port   = 8080
+  }
+  payment = {
+    from_port = 8080
+    to_port   = 8080
+  }
 
   }
 

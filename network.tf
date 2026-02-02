@@ -1,7 +1,7 @@
 resource "aws_security_group" "sg" {
-  name = "${var.env}-sg"
   for_each = var.appl_ports
-  dynamic "ingress" {
+  name = "${var.env}-${each.key}"
+   dynamic "ingress" {
     for_each = var.appl_ports
     content {
       from_port = ingress.value.from_port
