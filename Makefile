@@ -1,30 +1,30 @@
 git:
-  git pull  #  pull the code from git repo
+  git pull  ##  pull the code from git repo
 
 
-dev-apply:  #  dev environment to initialize and create a resources of terraform
-
-    terraform init -backend-config=env-dev/state.tfvars
-    terraform apply -var-file=env-dev/main.tfvars -auto-approve
-
-
-dev-destroy:  #  dev environment to initialize and destroy a resources of terraform
-
-    terraform init -backend-config=env-dev/state.tfvars
-    terraform destroy -var-file=env-dev/main.tfvars -auto-approve
-
-
-
-prod-apply:  #  dev environment to initialize and create a resources of terraform
-
-    terraform init -backend-config=env-dev/state.tfvars
-    terraform apply -var-file=env-dev/main.tfvars -auto-approve
-
-
-prod-destroy:  # dev environment to initialize and destroy a resources of terraform
-
-    terraform init -backend-config=env-dev/state.tfvars
-    terraform destroy -var-file=env-dev/main.tfvars -auto-approve
+# dev-apply:  ##  dev environment to initialize and create a resources of terraform
+#
+#     terraform init -backend-config=env-dev/state.tfvars
+#     terraform apply -var-file=env-dev/main.tfvars -auto-approve
+#
+#
+# dev-destroy:  ##  dev environment to initialize and destroy a resources of terraform
+#
+#     terraform init -backend-config=env-dev/state.tfvars
+#     terraform destroy -var-file=env-dev/main.tfvars -auto-approve
+#
+#
+#
+# prod-apply:  ##  dev environment to initialize and create a resources of terraform
+#
+#     terraform init -backend-config=env-dev/state.tfvars
+#     terraform apply -var-file=env-dev/main.tfvars -auto-approve
+#
+#
+# prod-destroy:  ## dev environment to initialize and destroy a resources of terraform
+#
+#     terraform init -backend-config=env-dev/state.tfvars
+#     terraform destroy -var-file=env-dev/main.tfvars -auto-approve
 
 
 
