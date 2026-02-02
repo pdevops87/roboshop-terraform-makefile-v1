@@ -7,11 +7,10 @@ components = {
 }
 
 appl_ports = {
-  ports = {
-    ssh = {
-      from_port = 22
-      to_port   = 22
+  ssh = {
+     from_port = 22
+     to_port   = 22
     }
 
   }
-}
+
