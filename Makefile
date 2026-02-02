@@ -1,7 +1,7 @@
 # Makefile
 
 git:
-	@echo "Pulling latest code from Git..."
+
 	git pull
 
 dev-apply:
