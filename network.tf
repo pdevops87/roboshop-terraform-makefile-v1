@@ -1,11 +1,12 @@
 resource "aws_security_group" "sg" {
-  for_each = var.appl_ports
+  for_each = var.components
   name = "${var.env}-${each.key}"
+  vpc_id = "vpc-02a94ee8944923438"
    dynamic "ingress" {
-    for_each = var.appl_ports
+    for_each = each.value.ports
     content {
-      from_port = ingress.value.from_port
-      to_port   = ingress.value.to_port
+      from_port = ingress.value
+      to_port   = ingress.value
       cidr_blocks = ["0.0.0.0/0"]
       protocol  = "tcp"
       description = ingress.key
