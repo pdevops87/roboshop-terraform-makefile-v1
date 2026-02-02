@@ -8,7 +8,10 @@ components = {
 
 appl_ports = {
   ports = {
-    ssh = 22
-    app = 80
+    ssh = {
+      from_port = 22
+      to_port   = 22
+    }
+
   }
 }
