@@ -1,5 +1,9 @@
+# Makefile
+
 git:
-  git pull  ##  pull the code from git repo
+	@echo "Pulling latest code from Git..."
+	git pull
+
 
 
 # dev-apply:  ##  dev environment to initialize and create a resources of terraform
